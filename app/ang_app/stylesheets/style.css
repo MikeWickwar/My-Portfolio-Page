@@ -1,0 +1,23 @@
+body{
+  height:300vh;
+}
+.header{
+  height: 7vh;
+  width: 100%;
+  background-color: rgba(252,234,187,1);
+  position: fixed;
+  margin-top: -3vh;
+}
+.landing{
+  height: 45vw;
+  background-color: rgba(252,234,187,1);
+  background: -webkit-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 36%, rgba(248,181,0,1) 51%, rgba(255,82,51,1) 100%);
+  display: flex;
+  justify-content: center;
+  margin-top: 3vh;
+}
+.logo{
+  font-family: 'Condiment';
+  font-size: 20vh;
+  margin-top: 30vh;
+}
