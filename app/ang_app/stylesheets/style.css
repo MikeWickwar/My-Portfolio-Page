@@ -1,7 +1,6 @@
 body{
   height:300vh;
   width: 100%
-  /*background-color: #00B26E*/
 }
 a{
   text-decoration: none;
@@ -59,7 +58,14 @@ a{
   margin-top: 25vh;
 }
 .footer{
-  height: 20vh;
+  height: 13vh;
   width: 100%;
   background-color: #384659;
+}
+.footer > *{
+  padding-top: 1%;
+  padding-left: .4%;
+  color: rgba(252,234,187,1);
+  font-weight: 100;
+  font-size: 140%;
 }
