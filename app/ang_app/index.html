@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/style.css" media="screen" title="no title" charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Condiment' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
   </head>
   <body ng-controller="MyController" ng-view>
     <div class="backimg">
@@ -29,7 +30,7 @@
       <div class="left col-lg-1">
         <div class="skills">
           <h1 class="f">Skills...</h1>
-          <h3 class="f" ng-repeat="skill in skills">{{skill.skill}}</h3 >
+          <h3 class="mf" ng-repeat="skill in skills">{{skill.skill}}</h3 >
           </div>
       </div>
       <div class="right col-lg-11">
@@ -37,25 +38,25 @@
           <h1 class="f">Projects...</h1>
             <div class="projects" ng-repeat="proj in projects">
               <div class="projhead">
-                <h3 class="f">{{proj.title}}</h3>
+                <h3 class="mf">{{proj.title}}</h3>
                 <a href="{{proj.gitlink}}"><i class="fa fa-github-square fa-2x hl" title="GitHub"></i></a>
                 <a href="{{proj.deploy}}"><i class="fa fa-rocket fa-2x hl" title="Deployed"></i></a>
               </div>
-              <li class="f">{{proj.description}}</li>
+              <li class="mf">{{proj.description}}</li>
             </div>
           </div>
         <div class="exp">
           <h1 class="f">Experience...</h1>
           <div class="jobs" ng-repeat="ex in exp">
-            <h3 class="f">{{ex.title}}</h3>
-            <li class="f">{{ex.time_at}}</li>
+            <h3 class="mf">{{ex.title}}</h3>
+            <li class="mf">{{ex.time_at}}</li>
           </div>
         </div>
         <div class="education">
           <h1 class="f">Education...</h1>
           <div class="schools" ng-repeat="ed in education">
-            <h3 class="f">{{ed.name_of}}</h3 >
-            <li class="f">{{ed.time_at}}</li>
+            <h3 class="mf">{{ed.name_of}}</h3 >
+            <li class="mf">{{ed.time_at}}</li>
           </div>
         </div>
       </div>

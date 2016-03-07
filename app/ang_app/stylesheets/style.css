@@ -42,6 +42,9 @@ li{
 .f{
   font-family: 'Condiment';
 }
+.mf{
+  font-family: 'Oxygen', sans-serif;
+}
 .logo{
   font-size: 20vh;
   margin-top: 30vh;
@@ -96,9 +99,6 @@ li{
 .right{
   margin-left: 2vw;
   display: flex;
-}
-.projects{
-
 }
 .projhead{
   display: flex;
