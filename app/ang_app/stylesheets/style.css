@@ -1,9 +1,17 @@
 body{
   height:300vh;
+  width: 100%
+  /*background-color: #00B26E*/
 }
 a{
   text-decoration: none;
   color: black;
+}
+.backimg{
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
 }
 .header{
   height: 7vh;
@@ -32,12 +40,26 @@ a{
   font-size: 20vh;
   margin-top: 30vh;
 }
+.location{
+  padding-left: 10%;
+}
 .htype{
   font-size: 3vh;
   padding-top: .5%;
 }
 .links{
-  width: 20vw;
+  width: 15vw;
   display: flex;
   justify-content: space-between;
+}
+.goods{
+  height: 93vh;
+  width: 100%;
+  background-color: rgba(252,234,187,1);
+  margin-top: 25vh;
+}
+.footer{
+  height: 20vh;
+  width: 100%;
+  background-color: #384659;
 }
