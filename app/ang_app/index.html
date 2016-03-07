@@ -16,7 +16,7 @@
       <div class="htype f">Michael Wickwar</div>
       <div class="htype f location">Denver, CO</div>
       <div class="links">
-        <a href="tel:1-720-837-8019"><i class="fa fa-phone-square fa-3x"></i></a>
+        <a href="tel:1-720-837-8019" title="1-720-837-8019"><i class="fa fa-phone-square fa-3x"></i></a>
         <a href='mailto:mike.wickwar@gmail.com' title="mike.wickwar@gmail.com"><i class="fa fa-envelope fa-3x"></i></a>
         <a href="https://www.linkedin.com/in/michael-wickwar-b0a6114b?trk=nav_responsive_tab_profile" title="Linkedin"><i class="fa fa-linkedin-square fa-3x"></i></a>
         <a href="https://github.com/MikeWickwar"><i class="fa fa-github-square fa-3x" title="GitHub"></i></a>
@@ -25,18 +25,39 @@
     <div class="landing">
       <div class='logo f'>MW</div>
     </div>
-    <div class="goods">
-      <div class="skills">
-        <h1 class="f">Skills...</h1>
+    <div class="goods col-lg-12">
+      <div class="left col-lg-1">
+        <div class="skills">
+          <h1 class="f">Skills...</h1>
+          <h3 class="f" ng-repeat="skill in skills">{{skill.skill}}</h3 >
+          </div>
       </div>
-      <div class="projects">
-        <h1 class="f">Projects...</h1>
-      </div>
-      <div class="exp">
-        <h1 class="f">Experience</h1>
-      </div>
-      <div class="education">
-        <h1 class="f">Education...</h1>
+      <div class="right col-lg-11">
+        <div class="projects">
+          <h1 class="f">Projects...</h1>
+            <div class="projects" ng-repeat="proj in projects">
+              <div class="projhead">
+                <h3 class="f">{{proj.title}}</h3>
+                <a href="{{proj.gitlink}}"><i class="fa fa-github-square fa-2x hl" title="GitHub"></i></a>
+                <a href="{{proj.deploy}}"><i class="fa fa-rocket fa-2x hl" title="Deployed"></i></a>
+              </div>
+              <li class="f">{{proj.description}}</li>
+            </div>
+          </div>
+        <div class="exp">
+          <h1 class="f">Experience...</h1>
+          <div class="jobs" ng-repeat="ex in exp">
+            <h3 class="f">{{ex.title}}</h3>
+            <li class="f">{{ex.time_at}}</li>
+          </div>
+        </div>
+        <div class="education">
+          <h1 class="f">Education...</h1>
+          <div class="schools" ng-repeat="ed in education">
+            <h3 class="f">{{ed.name_of}}</h3 >
+            <li class="f">{{ed.time_at}}</li>
+          </div>
+        </div>
       </div>
     </div>
     <div class="footer">

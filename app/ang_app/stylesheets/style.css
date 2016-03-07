@@ -6,6 +6,12 @@ a{
   text-decoration: none;
   color: black;
 }
+::-webkit-scrollbar {
+   display: none;
+}
+li{
+  font-size: 1.25em;
+}
 .backimg{
   height: 100vh;
   width: 100vw;
@@ -20,6 +26,7 @@ a{
   margin-top: -3vh;
   display: flex;
   justify-content: space-between;
+  z-index: 3;
 }
 .header > *{
   margin: .5%;
@@ -38,6 +45,8 @@ a{
 .logo{
   font-size: 20vh;
   margin-top: 30vh;
+  color: #000000;
+  /*color: #3b5564;*/
 }
 .location{
   padding-left: 10%;
@@ -56,11 +65,14 @@ a{
   width: 100%;
   background-color: rgba(252,234,187,1);
   margin-top: 25vh;
+  display: flex;
 }
 .footer{
   height: 13vh;
   width: 100%;
   background-color: #384659;
+  display: flex;
+  flex-direction: column;
 }
 .footer > *{
   padding-top: 1%;
@@ -74,4 +86,24 @@ a{
   width: 20px;
   float: left;
   margin-top: 40vh;
+}
+.skills{
+  margin-left:3%;
+  height:93vh;
+  width: 10vw;
+  overflow: auto;
+}
+.right{
+  margin-left: 2vw;
+  display: flex;
+}
+.projects{
+
+}
+.projhead{
+  display: flex;
+}
+.hl{
+  padding: 1.5vh;
+  padding-left: 2vh;
 }
