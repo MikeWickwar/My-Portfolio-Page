@@ -1,11 +1,16 @@
 var app = angular.module("myPortfolioApp", ['ngRoute']);
 
-
 app.config(function($routeProvider, $locationProvider) {
+
     $routeProvider
       .when('/', {
-        templateUrl: 'index.html',
-        controller: 'MyController'
+        controller: 'MyController',
+        templateUrl: './index.html'
       })
-    $locationProvider.html5Mode(true);
+      .when('/dashboard', {
+        templateUrl: './partials/dash.html',
+        controller: 'DBController'
+      })
+    // $locationProvider.html5Mode(true);
+
 });
