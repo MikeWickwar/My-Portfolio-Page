@@ -1,12 +1,21 @@
 body{
   height:300vh;
 }
+a{
+  text-decoration: none;
+  color: black;
+}
 .header{
   height: 7vh;
   width: 100%;
   background-color: rgba(252,234,187,1);
   position: fixed;
   margin-top: -3vh;
+  display: flex;
+  justify-content: space-between;
+}
+.header > *{
+  margin: .5%;
 }
 .landing{
   height: 45vw;
@@ -16,8 +25,19 @@ body{
   justify-content: center;
   margin-top: 3vh;
 }
-.logo{
+.f{
   font-family: 'Condiment';
+}
+.logo{
   font-size: 20vh;
   margin-top: 30vh;
+}
+.htype{
+  font-size: 3vh;
+  padding-top: .5%;
+}
+.links{
+  width: 20vw;
+  display: flex;
+  justify-content: space-between;
 }
