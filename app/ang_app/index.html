@@ -30,7 +30,9 @@
       <div class="left col-lg-1">
         <div class="skills">
           <h1 class="f">Skills...</h1>
-          <h3 class="mf" ng-repeat="skill in skills">{{skill.skill}}</h3 >
+          <h3 class="mf" ng-repeat="skill in skills">
+            <img src={{skill.skill}} alt="" class='badges'/>
+          </h3 >
           </div>
       </div>
       <div class="right col-lg-11">
