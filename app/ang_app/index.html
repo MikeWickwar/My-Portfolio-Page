@@ -27,9 +27,9 @@
       <div class='logo f'>MW</div>
     </div>
     <div class="goods col-lg-12">
-      <div class="left col-lg-1">
+      <div class="left col-lg-10">
         <div class="skills">
-          <h1 class="f">Skills...</h1>
+          <!-- <h1 class="f">Skills...</h1> -->
           <h3 class="mf" ng-repeat="skill in skills">
             <img src={{skill.skill}} alt="" class='badges'/>
           </h3 >
@@ -47,13 +47,6 @@
               <li class="mf">{{proj.description}}</li>
             </div>
           </div>
-        <div class="exp">
-          <h1 class="f">Experience...</h1>
-          <div class="jobs" ng-repeat="ex in exp">
-            <h3 class="mf">{{ex.title}}</h3>
-            <li class="mf">{{ex.time_at}}</li>
-          </div>
-        </div>
         <div class="education">
           <h1 class="f">Education...</h1>
           <div class="schools" ng-repeat="ed in education">

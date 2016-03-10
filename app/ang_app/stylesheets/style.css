@@ -68,7 +68,7 @@ li{
   width: 100%;
   background-color: rgba(252,234,187,1);
   margin-top: 25vh;
-  display: flex;
+  /*display: flex;*/
 }
 .footer{
   height: 13vh;
@@ -92,9 +92,10 @@ li{
 }
 .skills{
   margin-left:3%;
-  height:93vh;
-  width: 10vw;
+  height:25vh;
+  width: 90vw;
   overflow: auto;
+  display: flex;
 }
 .right{
   margin-left: 2vw;
