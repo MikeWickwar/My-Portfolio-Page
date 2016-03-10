@@ -8,9 +8,11 @@ app.config(function($routeProvider, $locationProvider) {
         templateUrl: './index.html'
       })
       .when('/dashboard', {
-        templateUrl: './partials/dash.html',
-        controller: 'DBController'
+        controller: 'DBController',
+        templateUrl: './partials/dash/index.html'
       })
-    // $locationProvider.html5Mode(true);
+      .otherwise({
+        template: '<div><h1>No Page Located Here</h1></div>'
+      })
 
 });

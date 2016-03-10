@@ -91,9 +91,9 @@ li{
   margin-top: 40vh;
 }
 .skills{
-  margin-left:3%;
-  height:25vh;
-  width: 90vw;
+  margin-left:1%;
+  height:20vh;
+  width: 95vw;
   overflow: auto;
   display: flex;
 }
@@ -103,6 +103,7 @@ li{
 }
 .projhead{
   display: flex;
+  align-items: baseline;
 }
 .hl{
   padding: 1.5vh;
@@ -111,4 +112,31 @@ li{
 .badges{
   height: 90px;
   width: 90px;
+}
+.thumbNails{
+  height: 20vh;
+  width: 15vw;
+}
+.heading, .desc{
+  margin:.5%;
+}
+.projwrapper{
+  height: 70vh;
+  overflow: auto;
+}
+.ng-enter, .ng-show {
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+}
+.ng-enter-active, .ng-show-active {
+  opacity: 1;
+}
+.ng-leave {
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 1;
+}
+.ng-leave-active {
+  opacity: 0;
 }
