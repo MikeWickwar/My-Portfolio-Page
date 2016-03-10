@@ -15,7 +15,7 @@ app.controller('MyController', ['$scope', 'SkillsService', function ($scope, Ski
   })
 }])
 
-app.controller('DBController', ['$scope', function ($scope) {
+app.controller('DBController', ['$scope', '$route', function ($scope, $route) {
   console.log('made it to DB controler');
   $scope.test = "portfolio";
 }])

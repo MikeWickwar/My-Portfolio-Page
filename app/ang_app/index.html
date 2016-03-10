@@ -8,64 +8,6 @@
     <link rel="stylesheet" href="stylesheets/style.css" media="screen" title="no title" charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Condiment' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
-  </head>
-  <body ng-controller="MyController" ng-view ng-cloak>
-    <div class="backimg">
-      <img src="https://cdn.photographylife.com/wp-content/uploads/2015/08/17047106726_197ebbcbb8_k-1.jpg" alt="" />
-    </div>
-    <header class="header">
-      <div class="htype f">Michael Wickwar</div>
-      <div class="htype f location">Denver, CO</div>
-      <div class="links">
-        <a href="tel:1-720-837-8019" title="1-720-837-8019"><i class="fa fa-phone-square fa-3x"></i></a>
-        <a href='mailto:mike.wickwar@gmail.com' title="mike.wickwar@gmail.com"><i class="fa fa-envelope fa-3x"></i></a>
-        <a href="https://www.linkedin.com/in/michael-wickwar-b0a6114b?trk=nav_responsive_tab_profile" title="Linkedin"><i class="fa fa-linkedin-square fa-3x"></i></a>
-        <a href="https://github.com/MikeWickwar"><i class="fa fa-github-square fa-3x" title="GitHub"></i></a>
-      </div>
-    </header>
-    <div class="landing">
-      <div class='logo f'>MW</div>
-    </div>
-    <div class="goods col-lg-12">
-      <div class="left col-lg-10">
-        <div class="skills">
-          <!-- <h1 class="f">Skills...</h1> -->
-          <h3 class="mf" ng-repeat="skill in skills">
-            <img src={{skill.skill}} alt="" class='badges'/>
-          </h3 >
-          </div>
-      </div>
-      <div class="right col-lg-11">
-        <div class="projwrapper">
-          <div class="projects">
-            <h1 class="f heading">Projects...</h1>
-              <div class="projects" ng-repeat="proj in projects">
-                <div class="projhead">
-                  <h2 class="mf">{{proj.title}}</h2>
-                  <a href="{{proj.gitlink}}" class="abtn"><i class="fa fa-github-square fa-2x hl" title="GitHub"></i></a>
-                  <a href="{{proj.deploy}}" class="abtn"><i class="fa fa-rocket fa-2x hl" title="Deployed"></i></a>
-                </div>
-                <img class="thumbNails" src="{{proj.img}}" alt="" />
-                <img class="thumbNails" src="{{proj.img2}}" alt="" />
-                <li class="mf desc">{{proj.description}}</li>
-              </div>
-            </div>
-        </div>
-        <div class="education">
-          <h1 class="f heading">Education...</h1>
-          <div class="schools" ng-repeat="ed in education">
-            <h3 class="mf">{{ed.name_of}}</h3 >
-            <li class="mf">{{ed.time_at}}</li>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="htype f">(720)-837-8019</div>
-      <div class="htype f">mike.wickwar@gmail.com</div>
-    </div>
-    <a href="/#/dashboard"><div class="hiddenbtn"></div></a>
-
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.2/angular.js"></script>
     <script type="text/javascript" src="https://code.angularjs.org/1.4.3/angular-route.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
@@ -73,5 +15,9 @@
     <script type="text/javascript" src="./js/app.js"></script>
     <script type="text/javascript" src="./js/controllers.js"></script>
     <script type="text/javascript" src="./js/services.js"></script>
+    <base href="/" target="_blank" />
+  </head>
+  <body ng-cloak ng-view>
+
   </body>
 </html>
