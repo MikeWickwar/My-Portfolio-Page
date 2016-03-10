@@ -7,10 +7,6 @@ app.config(function($routeProvider, $locationProvider) {
         controller: 'MyController',
         templateUrl: './partials/dash/splash.html'
       })
-      .when('/dashboard', {
-        controller: 'DBController',
-        templateUrl: './partials/dash/dash.html'
-      })
       .otherwise({
         template: '<div><h1>No Page Located Here</h1></div>'
       })
