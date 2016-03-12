@@ -91,7 +91,6 @@ li{
   margin-top: 40vh;
 }
 .skills{
-  margin-left:1%;
   height:20vh;
   width: 95vw;
   overflow: auto;
@@ -110,8 +109,8 @@ li{
   padding-left: 2vh;
 }
 .badges{
-  height: 90px;
-  width: 90px;
+  height: 70px;
+  width: 70px;
 }
 .thumbNails{
   height: 20vh;

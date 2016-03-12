@@ -1,6 +1,6 @@
 {
   "firebase": "mikewickwarportfolio",
-  "public": ".",
+  "public": "./",
   "ignore": [
     "firebase.json",
     "**/.*",
